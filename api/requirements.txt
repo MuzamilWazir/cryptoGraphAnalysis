@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+requests
+webdriver-manager
+pandas
+langchain
+langchain-openai
+python-dotenv
+groq

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { CandlestickData, Time } from "lightweight-charts";
 
 import CryptoChart from "./CryptoChart"; // The component we discussed earlier
+import NewsCard from "./NewsCard";
 
 // Fetch all symbols ending in USDT
 const fetchAllTokens = async () => {
@@ -163,6 +164,9 @@ export default function GraphSection() {
             <CryptoChart data={chartData} />
           )}
         </div>
+
+        {/* NEWS ANALYSIS CARD */}
+        <NewsCard token={selectedToken.replace('USDT', '')} />
       </div>
     </section>
   );
